@@ -15,7 +15,7 @@ steps:
       - 'get-credentials'
       - 'cloud-a3-cluster'
       - '--zone'
-      - 'us-central1-c'
+      - 'us-central1'
       - '--project'
       - 'cloud-a3-454015'
 
