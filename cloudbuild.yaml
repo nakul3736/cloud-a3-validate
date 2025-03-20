@@ -24,7 +24,7 @@ steps:
     args:
       - 'apply'
       - '-f'
-      - 'pvc.yaml'
+      - 'pv-claim.yaml'
 
   # Step 5: Deploy the application and service to GKE
   - name: 'gcr.io/cloud-builders/kubectl'
