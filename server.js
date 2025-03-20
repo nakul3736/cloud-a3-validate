@@ -8,7 +8,7 @@ const app = express();
 const PORT = 6000;
  
 // Middleware to parse JSON request bodies.
-app.use(express.json());
+app.use(express.json()); 
 
 // POST endpoint
 app.post('/calculate', async (req, res) => {
