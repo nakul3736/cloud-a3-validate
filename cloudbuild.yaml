@@ -1,7 +1,7 @@
 steps:
   # Step 1: Build the Docker image
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-central1-docker.pkg.dev/cloud-a3-454015/cloud-a3/validate', './container1']
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/cloud-a3-454015/cloud-a3/validate', '.']
 
   # Step 2: Push the Docker image to Artifact Registry (AR)
   - name: 'gcr.io/cloud-builders/docker'
