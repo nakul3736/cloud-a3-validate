@@ -19,6 +19,13 @@ steps:
       - '--project'
       - 'cloud-a3-454015'
 
+   # Step 3.1: Set the correct KUBECONFIG
+  - name: 'gcr.io/cloud-builders/kubectl'
+    args:
+      - 'config'
+      - 'use-context'
+      - 'gke_cloud-a3-454015_us-central1_cloud-a3-cluster'
+
   # Step 4: Deploy the application and service to GKE
   - name: 'gcr.io/cloud-builders/kubectl'
     args:
