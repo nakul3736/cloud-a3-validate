@@ -41,7 +41,7 @@ app.post('/calculate', async (req, res) => {
             // Connection error or other issues
             return res.status(500).json({ file, error: 'Internal server error: ' + error.message });
         }
-    }
+    } 
 });
 
 app.post('/store-file', async (req, res) => {
